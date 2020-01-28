@@ -1,0 +1,15 @@
+Arbol de expansion minima
+print() (basado en vertices)
+
+empieza desde cualquier vertice
+se marca y se agrega a un conjunto W
+busca un adyacente a los vertices agregados en W tal que su vertice sea el menor posible
+luego lo marco y lo agrego a W 
+se repite el algoritmo y se acaba cuando en W estan todos los vertices :v
+
+kruskal()  (basado en arcos)
++++retorna un grafo+++
+todos los arcos se ponen en una cola de prioridad segun su peso
+se hace poll 
+se lo agrega a los vertices del nuevo arbol siempre y cuando el arco no forme un ciclo
+se acaba cuando el numero de vertices lanzados el el numero de vertices-1

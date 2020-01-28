@@ -1,0 +1,24 @@
+    //un arbol esta desequilibrado cuando el factor de equilibrio es 2 o -2
+    //factor de equilibrio(arura derecha-altura izquierda)
+    //a penas se detecta un 2 o -2 se reestructura el arbol
+    //el signo indica de donde viene el desequilibrio, 
+    //si es - hay mas peso en izq. entonces se hace una rotacion hacia la derecha (rotaccion izq izq/R. simple derecha)
+    //si es + hay mas peso a la derecha, entonces se hace una rotacion hacia la izq(rotaccion der der/R. simple izq)
+    //ROTACION ISQ IZQ7 DER DER
+    // raiz desequilibrada=n, n1=el que tiene el sobrecargo
+    //caso 1 (no imposibilita la rotacion): al detectar el desequilibrio n1 se vuelve en raiz y n se vueleve en el nodo donde hay menos nodos
+    //caso 2(algun nodo impide rotar): n1 tiene hijo del mismo lado al que se va a rotar
+                                     //entonces este hijo se lo pone en n(que ya no sera raiz) en el lado contrario al que estaba
+    
+    //ROTACION IZQUIERDA DERECHA
+    //n=raiz, n1=izq, n2=dere
+    //n2 pasa a ser raiz, n1 sera hijo izqu y n sera hijo dere delhijo izquierdo
+    //caso especial (n2 tiene hijo izquierdo): el hijo de n2 ahora sera hijoderecho de n1 
+                   //(n2 tiene hijo derecho): el hijo de n2 ahora sera hijo izq de n
+                  //(n2 tiene 2 hijos): 
+    //ROTACION  DERECHA IZQUIERDA
+    //n=raiz, n1=der n2=izq
+    //n2 pasa a ser raiz, n1 sera hijo dere y n sera hijo izq del hijo derecho
+   //caso especial (n2 tiene hijo izquierdo): el hijo de n2 ahora sera hijoderecho de n 
+                   //(n2 tiene hijo derecho): el hijo de n2 ahora sera hijo izq de n1 
+                  //(n2 tiene 2 hijos): 
